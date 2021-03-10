@@ -25,7 +25,7 @@ segment_shape = pymunk.Segment(segment_body, (0, 250), (800, 50), 5)
 segment_shape.elasticity = 1
 space.add(segment_shape)
 
-image = pygame.image.load("basketball.png")
+image = pygame.image.load("basketball.png") #requires this file to exist in the current working directory
 image = pygame.transform.scale(image, (ball_radius*2, ball_radius*2))
 
 def game():
